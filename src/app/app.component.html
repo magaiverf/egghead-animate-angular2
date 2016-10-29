@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+
+<div *ngIf="isHere"
+ [@signal]="signal"
+ class="traffic-light"></div>
+
+ <button (click)="onGoClick()">Go</button>
+ <button (click)="onStopClick()">Stop</button>
+ <hr/>
+ <button (click)="onToogleClick()">Toogle</button>
+ 
